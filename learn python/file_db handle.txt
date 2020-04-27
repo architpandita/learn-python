@@ -1,0 +1,72 @@
+csv/xl data => 
+#create csv with below data:
+"student name",maths,english,science
+Akash,50,45,87
+Abby,84,87,95
+sumit,89,78,78
+rahul,79,87,75
+       
+open("file","w")
+
+2. read the csv =>
+open("file","r")
+data=f.read()  # Akash,50,45,87\nAbby,84,87,95\nsumit,89,78,78\n
+data.split("\n")#list as out
+#['Akash,50,45,87','Abby,84,87,95','sumit,89,78,78',""]
+
+for std in data:
+	std=std.split(",")
+	per=(std[1]+std[2]+std[3])/3
+	d.update({std[0]:[std[1],std[2],std[3],per]})
+
+
+json,codecs
+open("file.json","w")
+dump(d)
+
+2nd part:
+
+d={1:2,2:3,4:5}
+d.keys()#1,2,4
+
+
+open(".json",r)
+data_dic=load()
+
+db connect #sqlite3
+c=connection.cursor()
+c.execute("sql query")#create table with columns
+#enumerate x,y=enumerate([8,9,7,5])
+#
+
+#{Akash:[50,45,87],Abby:[84,87,95'],sumit:[89,78,78]}
+
+Akash,50,45
+for key in data_dic.keys():
+	cmd="insert "+key+","+data_dic[key][0]+","+data_dic[key][1]  +"into tablename;"
+	c.execute(cmd)
+	###c.execute("insert val1,val2,val3,val4,val5 into tablename;")
+	###c.execute("insert ?,?,?,?,? into tablename;",tuple(key,data_dic[key][0],data_dic[key][1]))
+
+run select
+
+mathsonly=[]
+englishonly=[]
+scionly=[]
+
+#import matplotlib  as plt
+plt.plot(y,"b","-")
+plt.label()
+plt.show()
+
+
+put data in xl file
+#openpyxl
+
+
+
+
+
+
+
+
